@@ -1,0 +1,56 @@
+public class Colin 
+{
+
+    public static void main(String[] args) 
+    {
+        // 
+        for(int X = 10; X > 0; X--){
+            System.out.println("X = " + X);
+        }
+
+    }
+}
+
+public class Edward
+
+{
+
+    public static void print_sums(){
+
+        int sum = 0 ;
+         for(int i = 1 ; i <= 10 ; i++){
+             for(int j = 1 ; j <= i; j++ ){
+                sum = sum + j ;
+             }
+             System.out.println( sum) ;
+             sum = 0 ;
+         }
+
+    }
+
+    public static void main(String[] args)
+    {
+        print_sums() ;
+
+
+    }
+}
+
+// Sample Java Program to Print 100 to 500 without Loop 
+public class print100to500 {
+	public static void main(String[] args) 
+	{
+		int number = 100;
+		
+		printNumbers(number);	
+	}
+	
+	public static void printNumbers(int num)
+	{
+		if(num <= 500)
+		{
+			System.out.print(num +" "); 
+			printNumbers(num + 1);
+		}	
+	}
+}
